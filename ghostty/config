@@ -1,0 +1,30 @@
+theme = Horizon
+background-opacity = 0.75
+
+font-family = Adwaita Mono
+font-size = 14
+window-inherit-font-size = false
+
+cursor-style = block
+cursor-style-blink = true
+mouse-hide-while-typing = true
+mouse-shift-capture = true
+
+window-decoration = none
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+window-padding-color = extend
+confirm-close-surface = false
+
+bell-features = no-audio
+bell-features = no-title
+
+command = fish
+shell-integration = fish
+working-directory = pawsoff
+window-inherit-working-directory = false
+
+link-url = true
+link-previews = osc8
+

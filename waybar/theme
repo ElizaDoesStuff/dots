@@ -1,0 +1,13 @@
+* {
+
+	font-family: Space Mono Nerd Font;
+	font-size: 14px;
+
+}
+
+window#waybar {
+
+	background-color: rgba( 16, 16, 16, 0.875 );
+	color: #e0e0e0;
+
+}

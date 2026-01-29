@@ -2,5 +2,5 @@
 	"layer": "top",
 	"margin": "16px",
 
-	"modules-center": [ "river/tags" ],
+	"modules-center": [ "hyprland/workspaces" ],
 }

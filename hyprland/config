@@ -15,11 +15,18 @@ $browser = zen-browser
 
 $reload  = ~/pawsoff/config/hyprland/reload
 
-$mod = SUPER
+$mod   = SUPER
+$left  = H
+$right = L
+$up    = K
+$down  = J
 
 bind = $mod, V,         exec, $term
 bind = $mod, B,         exec, $editor
 bind = $mod, N,         exec, $browser
+
+bind = $mod, $left,     workspace, -1
+bind = $mod, $right,    workspace, +1
 
 bind = $mod, Q,         killactive
 bind = $mod + SHIFT, Q, exit

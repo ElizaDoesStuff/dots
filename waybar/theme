@@ -7,7 +7,25 @@
 
 window#waybar {
 
-	background-color: rgba( 16, 16, 16, 0.875 );
-	color: #e0e0e0;
+	background-color: #202027;
+	color: #e0ffc0;
+
+	border-radius: 16px;
+
+}
+
+#workspaces button {
+
+	color: #e0ffc0;
+	opacity: 0.25;
+
+}
+
+#workspaces button.active {
+
+	color: #a0e080;
+	opacity: 1;
+
+	font-weight: bold;
 
 }

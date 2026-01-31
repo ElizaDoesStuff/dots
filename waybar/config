@@ -3,4 +3,10 @@
 	"margin": "16px",
 
 	"modules-center": [ "hyprland/workspaces" ],
+
+	"hyprland/workspaces": {
+
+		"format": "{icon}"
+
+	}
 }

@@ -6,12 +6,11 @@ set right l
 set up k
 set down j
 
-set term ghostty
+riverctl map normal $mod+Shift R spawn ~/pawsoff/config/river/rc
+riverctl map normal $mod+Shift Q exit
 
-riverctl map normal $mod R spawn ~/pawsoff/config/river/rc
-riverctl map normal $mod Q exit
-
-riverctl map normal $mod Return spawn $term
+riverctl map normal $mod Q close
+riverctl map normal $mod Return spawn wofi
 
 riverctl map normal $mod+Shift $left swap left
 riverctl map normal $mod+Shift $right swap right
@@ -28,21 +27,19 @@ for tag in ( seq 1 4 )
 end
 
 riverctl focus-follows-cursor disabled
+riverctl xcursor-theme phinger-cursors-dark 48
 
-riverctl background-color 0x101017
-
-riverctl border-color-focused 0xe0e0e0
-riverctl border-color-unfocused 0x404040
-riverctl border-width 4
+riverctl background-color 0x202027
+riverctl border-width 0
 
 if ! pgrep rivertile
 	riverctl default-layout rivertile
-	rivertile -outer-padding 8 -view-padding 8 &
+	rivertile -outer-padding 4 -view-padding 4 &
 end
 
 if ! pgrep swww-daemon
 	swww-daemon &
-	swww img ~/pawsoff/share/wallpapers/Kiki\ Town
+	swww img ~/pawsoff/share/wallpapers/Kiki\ Garden
 end
 
 if ! pgrep waybar

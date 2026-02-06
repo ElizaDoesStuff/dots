@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"margin": "16px",
+	"margin": "8px 8px 0px 8px",
 	
 	"modules-left": [ "custom/archbtw" ],
 	"modules-center": [ "river/tags" ],
@@ -23,6 +23,12 @@
 		"format": " ",
 		"id": "archbtw"
 
+	},
+
+	"clock": {
+
+		"timezone": "America/Chicago"
+	
 	}
 
 }

@@ -1,12 +1,28 @@
 {
 	"layer": "top",
 	"margin": "16px",
-
-	"modules-center": [ "hyprland/workspaces" ],
+	
+	"modules-left": [ "custom/archbtw" ],
+	"modules-center": [ "river/tags" ],
+	"modules-right": [ "clock" ],
 
 	"hyprland/workspaces": {
 
 		"format": "{icon}"
 
+	},
+
+	"river/tags": {
+
+		"num-tags": 4
+
+	},
+
+	"custom/archbtw": {
+
+		"format": " ",
+		"id": "archbtw"
+
 	}
+
 }

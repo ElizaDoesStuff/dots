@@ -14,18 +14,39 @@ window#waybar {
 
 }
 
-#workspaces button {
+#workspaces button, #tags button {
 
 	color: #e0ffc0;
 	opacity: 0.25;
 
 }
 
-#workspaces button.active {
+#workspaces button.active, #tags button.focused {
 
 	color: #a0e080;
 	opacity: 1;
 
 	font-weight: bold;
+
+}
+
+#tags button:hover {
+	
+	background-color: transparent;
+	color: #e0ffc0;
+
+	opacity: 1;
+
+}
+
+#clock {
+
+	padding: 0 16px;
+
+}
+
+#custom-archbtw {
+
+	padding: 0 16px;
 
 }

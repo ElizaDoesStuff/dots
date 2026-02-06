@@ -31,6 +31,8 @@ bind = $mod, $right,    workspace, +1
 bind = $mod, Q,         killactive
 bind = $mod + SHIFT, Q, exit
 
+bind = $mod, F,		fullscreen
+
 bind = $mod, R,         exec, $reload
 
 general {
@@ -57,3 +59,6 @@ decoration {
 	}
 
 }
+
+cursor=
+phinger-cursors-dark 42

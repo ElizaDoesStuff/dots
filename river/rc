@@ -1,6 +1,6 @@
 #!/usr/bin/fish
 
-set mod Mod4
+set mod Super
 set left h
 set right l
 set up k
@@ -22,6 +22,10 @@ riverctl map normal $mod $left focus-view left
 riverctl map normal $mod $right focus-view right
 riverctl map normal $mod $up focus-view up
 riverctl map normal $mod $down focus-view down
+
+for tag in ( seq 1 4 )
+	riverctl map normal $mod $tag set-focused-tags ( math "2^( $tag - 1 )" )
+end
 
 riverctl focus-follows-cursor disabled
 

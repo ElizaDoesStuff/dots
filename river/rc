@@ -10,7 +10,7 @@ riverctl map normal $mod+Shift R spawn ~/pawsoff/config/river/rc
 riverctl map normal $mod+Shift Q exit
 
 riverctl map normal $mod Q close
-riverctl map normal $mod Return spawn wofi
+riverctl map normal $mod Return spawn ghostty
 
 riverctl map normal $mod+Shift $left swap left
 riverctl map normal $mod+Shift $right swap right

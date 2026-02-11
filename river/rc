@@ -6,7 +6,7 @@ set right l
 set up k
 set down j
 
-riverctl map normal $mod+Shift R spawn ~/pawsoff/config/river/rc
+riverctl map normal $mod+Shift R spawn ~/pawsoff/dots/river/rc
 riverctl map normal $mod+Shift Q exit
 
 riverctl map normal $mod Q close
@@ -29,7 +29,7 @@ end
 riverctl focus-follows-cursor disabled
 riverctl xcursor-theme phinger-cursors-dark 48
 
-riverctl background-color 0x202027
+riverctl background-color 0x101014
 riverctl border-width 0
 
 if ! pgrep rivertile
@@ -39,7 +39,7 @@ end
 
 if ! pgrep swww-daemon
 	swww-daemon &
-	swww img ~/pawsoff/share/wallpapers/Kiki\ Garden
+	swww img ~/pawsoff/resources/wallpapers/Kiki\ Night
 end
 
 if ! pgrep waybar

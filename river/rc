@@ -26,8 +26,8 @@ for tag in ( seq 1 4 )
 	riverctl map normal $mod $tag set-focused-tags ( math "2^( $tag - 1 )" )
 end
 
-riverctl focus-follows-cursor disabled
-riverctl xcursor-theme phinger-cursors-dark 48
+riverctl focus-follows-cursor enabled
+riverctl xcursor-theme phinger-cursors-light 48
 
 riverctl background-color 0xffffff
 riverctl border-color 0x000000

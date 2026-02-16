@@ -1,0 +1,28 @@
+[main]
+font=Space Mono:size=16
+prompt="$ "
+terminal="ghostty -e"
+horizontal-pad=16
+vertical-pad=16
+inner-pad=8
+gamma-correct=enabled
+
+[colors]
+background=ffffffff
+border=000000ff
+text=000000ff
+prompt=000000ff
+input=000000ff
+match=000000ff
+selection=e0e0e0ff
+selection-text=000000ff
+selection-text=000000ff
+
+[border]
+width=2
+radius=0
+selection-radius=0
+
+[key-bindings]
+cancel=Shift+Return
+execute=Return

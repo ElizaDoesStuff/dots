@@ -1,4 +1,0 @@
-#!/usr/bin/fish
-
-pkill waybar
-waybar &> /dev/null &

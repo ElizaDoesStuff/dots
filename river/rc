@@ -29,8 +29,9 @@ end
 riverctl focus-follows-cursor disabled
 riverctl xcursor-theme phinger-cursors-dark 48
 
-riverctl background-color 0x101014
-riverctl border-width 0
+riverctl background-color 0xffffff
+riverctl border-color 0x000000
+riverctl border-width 4
 
 if ! pgrep rivertile
 	riverctl default-layout rivertile
@@ -39,7 +40,7 @@ end
 
 if ! pgrep swww-daemon
 	swww-daemon &
-	swww img ~/pawsoff/resources/wallpapers/Kiki\ Night
+	swww img ~/pawsoff/resources/wallpapers/Kiki\ Cat
 end
 
 if ! pgrep waybar

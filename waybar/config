@@ -2,13 +2,27 @@
 	"layer": "top",
 	"margin": "8px 8px 0px 8px",
 	
-	"modules-left": [ "custom/archbtw" ],
+	"modules-left": [ "custom/archbtw", "custom/pipewire" ],
 	"modules-center": [ "river/tags" ],
-	"modules-right": [ "clock" ],
+	"modules-right": [ "bluetooth", "network", "battery", "clock" ],
 
-	"hyprland/workspaces": {
+	"custom/archbtw": {
 
-		"format": "{icon}"
+		"format": " ",
+		"id": "archbtw"
+
+	},
+
+	"custom/pipewire": {
+
+		"exec": "pw-volume status",
+		"return-type": "json",
+
+		"format": "{icon} {percentage}%",
+		"format-icons": {
+			"mute": "󰝟 ",
+			"default": [ "󰕿 ", "󰖀 ", "󰕾 " ]
+		}
 
 	},
 
@@ -18,10 +32,24 @@
 
 	},
 
-	"custom/archbtw": {
+	"bluetooth": {
 
-		"format": " ",
-		"id": "archbtw"
+		"format": "󰂯 {status} ({device_battery_percentage}%)"
+
+	},
+
+	"network": {
+		
+		"format": "{ifname}",
+		"format-wifi": "󰖩 {essid} {signalStrength}",
+		"format-ethernet": "󰈀 {ifname}"
+
+	},
+
+	"battery": {
+
+		"format": "{icon} {capacity}%",
+		"interval": 30
 
 	},
 

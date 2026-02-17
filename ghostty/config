@@ -1,4 +1,6 @@
-theme = Black Metal
+theme = Cutie Pro
+background = #000000
+foreground = #ffffff
 background-opacity = 1.0
 
 font-family = Adwaita Mono

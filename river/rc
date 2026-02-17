@@ -32,10 +32,9 @@ riverctl xcursor-theme phinger-cursors-light 48
 riverctl background-color 0xffffff
 riverctl border-width 0
 
-if ! pgrep rivertile
-	riverctl default-layout rivertile
-	rivertile -outer-padding 4 -view-padding 4 &
-end
+pkill rivertile
+riverctl default-layout rivertile
+rivertile -outer-padding 0 -view-padding 8 -main-ratio 0.5 &
 
 if ! pgrep swww-daemon
 	swww-daemon &

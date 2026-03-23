@@ -1,0 +1,28 @@
+#!/usr/bin/fish
+
+echo "Configuring $(set_color brblue)Chromium... $(set_color normal)"
+mkdir ~/.config/river &> /dev/null
+ln -f chromium/flags ~/.config/chromium/Local\ State
+
+echo "Configuring $(set_color brblue)Fish... $(set_color normal)"
+mkdir ~/.config/fish &> /dev/null
+mkdir ~/.config/fish/functions &> /dev/null
+ln -f fish/prompt ~/.config/fish/functions/fish_prompt.fish
+
+echo "Configuring $(set_color brblue)Fuzzel... $(set_color normal)"
+mkdir ~/.config/fuzzel &> /dev/null
+ln -f fuzzel/config ~/.config/fuzzel/fuzzel.ini
+
+echo "Configuring $(set_color brblue)Ghostty... $(set_color normal)"
+mkdir ~/.config/ghostty &> /dev/null
+ln -f ghostty/config ~/.config/ghostty/config
+
+echo "Configuring $(set_color brblue)River... $(set_color normal)"
+mkdir ~/.config/river &> /dev/null
+ln -f river/rc ~/.config/river/init
+chmod +x ~/.config/river/init
+
+echo "Configuring $(set_color brblue)Waybar... $(set_color normal)"
+mkdir ~/.config/waybar &> /dev/null
+ln -f waybar/config ~/.config/waybar/config.jsonc
+ln -f waybar/style  ~/.config/waybar/style.css

@@ -1,0 +1,21 @@
+#!/usr/bin/fish
+
+argparse "s/save" "S/saveas" "" -- $argv
+
+set data
+if test $_flag_region
+	grim -g $(slurp) - | set SS
+else
+	grim - | set SS
+end
+
+set file
+if test $_flag_save
+	set file $(date +"%Y.%m.%d %T")
+	echo $data > ~/pawsoff/misc/screenshots/$file
+else if test $_flag_saveas
+	set file $(fuzzel -c ~/pawsoff/dots/grim/menu -- )
+	echo $data > ~/pawsoff/misc/screenshots/$file
+end
+
+wl-copy $data

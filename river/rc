@@ -12,21 +12,25 @@ riverctl map normal $mod+Shift Q exit
 riverctl map normal $mod Q close
 riverctl map normal $mod Return spawn fuzzel
 
-riverctl map normal $mod+Shift $left swap left
-riverctl map normal $mod+Shift $right swap right
-riverctl map normal $mod+Shift $up swap up
-riverctl map normal $mod+Shift $down swap down
-
 riverctl map normal $mod $left focus-view left
 riverctl map normal $mod $right focus-view right
 riverctl map normal $mod $up focus-view up
 riverctl map normal $mod $down focus-view down
 
+riverctl map normal $mod+Shift $left swap left
+riverctl map normal $mod+Shift $right swap right
+riverctl map normal $mod+Shift $up swap up
+riverctl map normal $mod+Shift $down swap down
+
 for tag in ( seq 1 4 )
 	riverctl map normal $mod $tag set-focused-tags ( math "2^( $tag - 1 )" )
+	riverctl map normal $mod+Shift $tag set-view-tags (math "2^($tag - 1)")
 end
 
-riverctl focus-follows-cursor enabled
+riverctl map normal $mod Y spawn "grim - | wl-copy"
+riverctl map normal $mod+Shift Y spawn "grim -g \$(slurp) - | wl-copy"
+riverctl map normal $mod U spawn "grim - > ~/pawsoff/res/screenshots/\$(date +'%Y.%m.%d %T')"
+
 riverctl xcursor-theme phinger-cursors-light 48
 
 riverctl background-color 0xffffff
@@ -36,13 +40,9 @@ pkill rivertile
 riverctl default-layout rivertile
 rivertile -outer-padding 0 -view-padding 8 -main-ratio 0.5 &
 
-if ! pgrep swww-daemon
-	swww-daemon &
-	swww img ~/pawsoff/resources/wallpapers/Kiki\ Cat
-end
+pkill swww-daemon
+swww-daemon &
+swww img ~/pawsoff/dots/swww/wallpaper
 
-if ! pgrep waybar
-	waybar &
-else
-	pkill -USR2 waybar
-end
+pkill waybar
+waybar &

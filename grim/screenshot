@@ -1,12 +1,13 @@
 #!/usr/bin/fish
 
-argparse "s/save" "S/saveas" "" -- $argv
+argparse "s/save" "S/saveas" "r/region" -- $argv
+mkdir -p ~/pawsoff/misc/screenshots &> /dev/null
 
 set data
 if test $_flag_region
-	grim -g $(slurp) - | set SS
+	set data $(grim -g $(slurp) -)
 else
-	grim - | set SS
+	set data $(grim -)
 end
 
 set file

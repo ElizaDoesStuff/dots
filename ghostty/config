@@ -3,7 +3,7 @@ background = #000000
 foreground = #ffffff
 background-opacity = 1.0
 
-font-family = Adwaita Mono
+font-family = Maple Mono NF
 font-size = 14
 window-inherit-font-size = false
 

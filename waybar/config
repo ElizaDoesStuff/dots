@@ -54,7 +54,8 @@
 	},
 
 	"clock": {
-
+		
+		"format": "{:%R %d.%m.%y}",
 		"timezone": "America/Chicago"
 	
 	}

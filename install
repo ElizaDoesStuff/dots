@@ -3,7 +3,6 @@
 echo "Configuring $(set_color brblue)Chromium... $(set_color normal)"
 mkdir ~/.config/chromium &> /dev/null
 ln -f chromium/flags ~/.config/chromium/Local\ State
-ln -f chromium/prefs ~/.config/chromium/Default/Preferences
 
 echo "Configuring $(set_color brblue)Fish... $(set_color normal)"
 mkdir ~/.config/fish &> /dev/null

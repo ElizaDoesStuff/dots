@@ -12,6 +12,9 @@ riverctl map normal $mod+Shift Q exit
 riverctl map normal $mod Q close
 riverctl map normal $mod Return spawn fuzzel
 
+riverctl map normal $mod F toggle-float
+riverctl map normal $mod D toggle-fullscreen
+
 riverctl map normal $mod $left focus-view left
 riverctl map normal $mod $right focus-view right
 riverctl map normal $mod $up focus-view up

@@ -31,7 +31,7 @@ for tag in ( seq 1 4 )
 end
 
 riverctl map normal $mod Y spawn "grim - | wl-copy"
-riverctl map normal $mod+Shift Y spawn "grim -g \$(slurp) - | wl-copy"
+riverctl map normal $mod+Shift Y spawn "grim -g \"\$(slurp)\" - | wl-copy"
 riverctl map normal $mod U spawn "grim - > ~/pawsoff/res/screenshots/\$(date +'%Y.%m.%d %T')"
 
 riverctl xcursor-theme phinger-cursors-light 48

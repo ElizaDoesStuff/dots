@@ -17,9 +17,13 @@ echo "Configuring $(set_color brblue)Ghostty... $(set_color normal)"
 mkdir ~/.config/ghostty &> /dev/null
 ln -f ghostty/config ~/.config/ghostty/config
 
+echo "Configuring $(set_color brblue)Neovim... $(set_color normal)"
+mkdir ~/.config/nvim &> /dev/null
+ln -f nvim/init ~/.config/nvim/init.lua
+
 echo "Configuring $(set_color brblue)River... $(set_color normal)"
 mkdir ~/.config/river &> /dev/null
-ln -f river/rc ~/.config/river/init
+ln -f river/init ~/.config/river/init
 chmod +x ~/.config/river/init
 
 echo "Configuring $(set_color brblue)Waybar... $(set_color normal)"

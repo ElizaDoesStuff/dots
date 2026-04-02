@@ -6,7 +6,7 @@ set right l
 set up k
 set down j
 
-riverctl map normal $mod+Shift R spawn ~/pawsoff/dots/river/rc
+riverctl map normal $mod+Shift R spawn ~/pawsoff/dots/river/init
 riverctl map normal $mod+Shift Q exit
 
 riverctl map normal $mod Q close

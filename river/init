@@ -32,7 +32,7 @@ end
 
 riverctl map normal $mod Y spawn "grim - | wl-copy"
 riverctl map normal $mod+Shift Y spawn "grim -g \"\$(slurp)\" - | wl-copy"
-riverctl map normal $mod U spawn "grim - > ~/pawsoff/res/screenshots/\$(date +'%Y.%m.%d %T')"
+riverctl map normal $mod U spawn "grim - > ~/pawsoff/misc/screenshots/\$(date +'%Y.%m.%d %T')"
 
 riverctl xcursor-theme phinger-cursors-light 48
 

@@ -1,6 +1,6 @@
 * {
 
-	font-family: Space Mono Nerd Font;
+	font-family: Noto Sans Mono CJK JP, monospace;
 	font-size: 14px;
 
 	transition: 0;

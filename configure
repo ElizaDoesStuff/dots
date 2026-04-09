@@ -19,7 +19,9 @@ ln -f ghostty/config ~/.config/ghostty/config
 
 echo "Configuring $(set_color brblue)Neovim... $(set_color normal)"
 mkdir ~/.config/nvim &> /dev/null
+mkdir ~/.config/nvim/lua &> /dev/null
 ln -f nvim/init ~/.config/nvim/init.lua
+ln -f nvim/plugins ~/.config/nvim/lua/plugins.lua
 
 echo "Configuring $(set_color brblue)River... $(set_color normal)"
 mkdir ~/.config/river &> /dev/null

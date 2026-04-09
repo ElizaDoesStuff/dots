@@ -16,6 +16,7 @@ set packages \
 	fuzzel \
 	ghostty \
 	grim \
+	luarocks \
 	man-db \
 	man-pages \
 	meson \

@@ -1,9 +1,7 @@
-theme = Black Metal (Venom)
-background = #000000
-foreground = #ffffff
+theme = Black Metal (Immortal)
 background-opacity = 1.0
 
-font-family = Maple Mono NF
+font-family = Noto Code
 font-size = 14
 window-inherit-font-size = false
 

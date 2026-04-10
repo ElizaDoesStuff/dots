@@ -15,7 +15,9 @@ ln -f fuzzel/config ~/.config/fuzzel/fuzzel.ini
 
 echo "Configuring $(set_color brblue)Ghostty... $(set_color normal)"
 mkdir ~/.config/ghostty &> /dev/null
+mkdir ~/.config/ghostty/themes &> /dev/null
 ln -f ghostty/config ~/.config/ghostty/config
+ln -f ghostty/theme ~/.config/ghostty/themes/Brutalist
 
 echo "Configuring $(set_color brblue)Neovim... $(set_color normal)"
 mkdir ~/.config/nvim &> /dev/null

@@ -1,7 +1,5 @@
 -- vim: ft=lua
 
-vim.cmd "colorscheme sorbet"
-
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.wrap = false
@@ -38,3 +36,5 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
+vim.cmd "colorscheme immortal"

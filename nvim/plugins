@@ -2,5 +2,6 @@
 
 return {
 	{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" },
-	{ "wakatime/vim-wakatime", lazy = false }
+	{ "wakatime/vim-wakatime", lazy = false },
+	{ "metalelf0/black-metal-theme-neovim", lazy = false, priority = 1000 }
 }
